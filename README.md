@@ -10,6 +10,9 @@ Program was tested on 'Ubuntu 16.04' with 'Python 3.6.5 |Anaconda, Inc.|'
 
 ![alt text](https://raw.githubusercontent.com/Tigran-teq-Tadevosyan/malmheden-algorithm/master/screenshots/first.png)
 ![alt text](https://raw.githubusercontent.com/Tigran-teq-Tadevosyan/malmheden-algorithm/master/screenshots/second.png)
+![alt text](https://raw.githubusercontent.com/Tigran-teq-Tadevosyan/malmheden-algorithm/master/screenshots/third.png)
+![alt text](https://raw.githubusercontent.com/Tigran-teq-Tadevosyan/malmheden-algorithm/master/screenshots/forth.png)
+![alt text](https://raw.githubusercontent.com/Tigran-teq-Tadevosyan/malmheden-algorithm/master/screenshots/fifth.png)
 
 ## Installation and Excution
 
@@ -24,6 +27,10 @@ Program was tested on 'Ubuntu 16.04' with 'Python 3.6.5 |Anaconda, Inc.|'
 3. Install numpy
     ```shell
     pip install numpy
+    ```
+1. Install pyqtgraph
+    ```shell
+    pip install pyqtgraph
     ```
 4. Run the program by going to the directory
     * If you are using Windows run
