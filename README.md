@@ -4,6 +4,7 @@
 This little program is computing the value of harmonic function after calculating it with Malmheden method
 It only works for disk boundry conditions
 It takes as an input radius of the disk ( which is centered at (0,0) ) and the values of x,y coordinates and boundry conditions function from set of selected functions ( Potentialy it could work with and functions I just could not found a way for user to input it's own function ) and outputs the harmonic function's value at that point
+It also plots the graph of that harmonic function for fixed value of x or y
 Program was tested on 'Ubuntu 16.04' with 'Python 3.6.5 |Anaconda, Inc.|'
 
 ## Some Screenshots
