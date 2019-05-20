@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(782, 608)
+        MainWindow.resize(782, 627)
         MainWindow.setStyleSheet("background:white;")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -179,12 +179,16 @@ class Ui_MainWindow(object):
         self.plotButton.setFont(font)
         self.plotButton.setObjectName("plotButton")
         self.formLayout_2.setWidget(8, QtWidgets.QFormLayout.LabelRole, self.plotButton)
+        self.pushButton = QtWidgets.QPushButton(self.widget_2)
+        self.pushButton.setObjectName("pushButton")
+        self.formLayout_2.setWidget(9, QtWidgets.QFormLayout.LabelRole, self.pushButton)
         self.verticalLayout.addWidget(self.widget_2)
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
         self.CalculateButton.clicked.connect(MainWindow.calculateValue)
         self.plotButton.clicked.connect(MainWindow.plot)
+        self.pushButton.clicked.connect(MainWindow.plot3D)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -211,6 +215,7 @@ class Ui_MainWindow(object):
         self.plottingOptionInput.setItemText(1, _translate("MainWindow", "y"))
         self.label_9.setText(_translate("MainWindow", "x = "))
         self.plotButton.setText(_translate("MainWindow", "Plot"))
+        self.pushButton.setText(_translate("MainWindow", "Plot 3D"))
 
 
 if __name__ == "__main__":

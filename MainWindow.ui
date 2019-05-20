@@ -389,6 +389,13 @@
          </property>
         </widget>
        </item>
+       <item row="9" column="0">
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>Plot 3D</string>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
     </item>
@@ -429,9 +436,26 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>plot3D()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>597</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>597</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>calculateValue()</slot>
   <slot>plot()</slot>
+  <slot>plot3D()</slot>
  </slots>
 </ui>

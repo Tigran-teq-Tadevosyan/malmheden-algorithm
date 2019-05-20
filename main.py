@@ -6,6 +6,7 @@ from PyQt5.QtGui import QPixmap, QPainter, QPen, QImage, QGuiApplication, QCurso
 import numpy as np
 import pyqtgraph as pg
 
+import graphDrawer3d
 
 ## Start Qt event loop unless running in interactive mode or using pyside.
 if __name__ == '__main__':
@@ -52,6 +53,10 @@ class Window(QMainWindow):
                 range_data.append(index)
                 data.append(computer.compute( index,fixed_y,radius,bdry ))
         pg.plot(range_data,data, title="Graph")
+
+    @pyqtSlot()
+    def plot3D(self):
+        v = graphDrawer3d.Visualizer(self.ui.radiusInput.value(),self.ui.bdryFunctionInput.currentIndex())
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
